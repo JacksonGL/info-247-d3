@@ -1,0 +1,129 @@
+.radar-chart .level {
+  stroke: #fff;
+  stroke-width: 1;
+}
+
+.radar-chart .axis line {
+  stroke: #fff;
+  stroke-width: 1.5;
+}
+.radar-chart .axis .legend {
+  font-size: 13px;
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 0px 0px 10px #000;
+}
+.radar-chart .axis .legend.top {
+  dy:1em;
+}
+.radar-chart .axis .legend.left {
+  text-anchor: start;
+}
+.radar-chart .axis .legend.middle {
+  text-anchor: middle;
+}
+.radar-chart .axis .legend.right {
+  text-anchor: end;
+}
+
+.radar-chart .tooltip {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  fill: yellow;
+  text-shadow: 0px 0px 10px #000;
+  transition: opacity 200ms;
+  opacity: 0;
+}
+.radar-chart .tooltip.visible {
+  opacity: 1;
+}
+
+/* area transition when hovering */
+.radar-chart .area {
+  stroke-width: 2;
+  fill-opacity: 0.5;
+}
+.radar-chart.focus .area {
+  fill-opacity: 0.1;
+}
+.radar-chart.focus .area.focused {
+  fill-opacity: 0.7;
+}
+
+.radar-chart .circle {
+  fill-opacity: 0.9;
+}
+
+/* transitions */
+.radar-chart .area, .radar-chart .circle {
+  transition: opacity 300ms, fill-opacity 200ms;
+  opacity: 1;
+}
+.radar-chart .d3-enter, .radar-chart .d3-exit {
+  opacity: 0;
+}
+
+
+.radar-chart .area {
+  fill-opacity: 0.7;
+}
+.radar-chart.focus .area {
+  fill-opacity: 0.3;
+}
+.radar-chart.focus .area.focused {
+  fill-opacity: 0.9;
+}
+.area.Group1, .Group1 .circle {
+  fill: #FF0000;
+  stroke: none;
+}
+.area.Group2, .Group2 .circle {
+  fill: #ff8c19;
+  stroke: none;
+}
+.area.Group3, .Group3 .circle {
+  fill: #ffff66;
+  stroke: none;
+} /*as there are more categories for the region radar chart, modified the style to have stroke but no fill */
+.area.Group4, .Group4 .circle { 
+  stroke: #FF0000;
+  fill: none;
+}
+.area.Group5, .Group5 .circle {
+  stroke: #ff8c19;
+  fill: none;
+}
+.area.Group6, .Group6 .circle {
+  stroke: #ffff66;
+  fill: none;
+}
+.area.Group7, .Group7 .circle {
+  stroke: #b3ff66;
+  fill: none;
+}
+.area.Group8, .Group8 .circle {
+  stroke: #66b3ff;
+  fill: none;
+}
+.area.Group9, .Group9 .circle {
+  stroke: #ff66ff;
+  fill: none;
+}
+.area.Group10, .Group10 .circle {
+  stroke: #66ffb3;
+  fill: none;
+}
+
+.radar_chart_container {
+  margin-top: 10%;
+  float: left;
+  position: relative;
+  width: 330px;
+}
+
+.radar_chart_caption {
+  margin-top: -70px;
+  font-size: 18px;
+  color: yellow;
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 0px 0px 10px #000;
+}
